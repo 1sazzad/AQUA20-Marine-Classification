@@ -1,0 +1,2 @@
+experiment,audit_status,checkpoint_epoch,checkpoint_sha256,val_top1,val_top2,val_top3,val_macro_precision,val_macro_recall,val_macro_f1,train_images,val_images,batch_size,beta,gamma,checkpoint_selection,seed
+F03_CONVNEXT_SMALL_GENTLE_CB_FOCAL,PASSED,13,928c8af60aef70537263e2c8cc1cf13782747bc5974f86ff054fbe352065c26f,0.9253048780487805,0.9763719512195121,0.9946646341463414,0.8799293448581487,0.9261887298051781,0.8933009691623253,5247,1312,16,0.999,1.0,validation_macro_f1,42

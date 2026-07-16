@@ -1,0 +1,18 @@
+{
+  "experiment": "F01_YOLO26M_CLS_AUG200",
+  "model": "YOLO26m-cls",
+  "training_strategy": "Aug-200 train-only balancing",
+  "best_epoch": 2,
+  "val_top1_pct": 87.88110017776489,
+  "val_top5_pct": 99.39024448394775,
+  "test_top1_pct": 84.67741935483872,
+  "test_top5_pct": 98.94540942928039,
+  "macro_precision_pct": 83.30535757778472,
+  "macro_recall_pct": 73.98953258799918,
+  "macro_f1_pct": 75.99076868071187,
+  "weighted_f1_pct": 84.4248715615062,
+  "test_support": 1612,
+  "base_paper_top1_pct": 92.68,
+  "difference_vs_base_pp": -8.002580645161288,
+  "beats_base_paper": false
+}

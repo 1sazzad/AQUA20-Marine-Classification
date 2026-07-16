@@ -1,0 +1,7 @@
+dataset_version,split,image_count,expected_count,matches_expected
+official_original,train,5247,5247,True
+official_original,val,1312,1312,True
+official_original,test,1612,1612,True
+aug200_train_only,train,7284,7284,True
+aug200_train_only,val,1312,1312,True
+aug200_train_only,test,1612,1612,True

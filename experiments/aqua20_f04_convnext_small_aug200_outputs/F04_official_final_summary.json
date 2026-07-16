@@ -1,0 +1,63 @@
+{
+  "experiment": "F04_CONVNEXT_SMALL_AUG200",
+  "status": "COMPLETED",
+  "scientific_group": "G2_data_level_balancing_control",
+  "method": "ConvNeXt-Small + Aug-200 train-only balancing + standard CrossEntropyLoss",
+  "checkpoint_selection": "validation_macro_f1",
+  "best_epoch": 20,
+  "checkpoint_sha256": "4e2c4abddb528e52d9721c6e1f85ea389788495f315d2891989e4ff2e403a1a7",
+  "dataset": {
+    "train": 7284,
+    "validation": 1312,
+    "test": 1612,
+    "classes": 20,
+    "seed": 42
+  },
+  "validation": {
+    "top1": 0.9283536585365854,
+    "top2": 0.9778963414634146,
+    "top3": 0.993140243902439,
+    "top5": 0.9984756097560976,
+    "macro_precision": 0.9075274806892454,
+    "macro_recall": 0.9051226972512338,
+    "macro_f1": 0.8980879149859851
+  },
+  "official_test": {
+    "top1": 0.9137717121588089,
+    "top2": 0.9727047146401985,
+    "top3": 0.9900744416873449,
+    "top5": 0.9962779156327544,
+    "macro_precision": 0.8932409302685409,
+    "macro_recall": 0.8432356292991334,
+    "macro_f1": 0.8600348990839306,
+    "weighted_precision": 0.9140666058772203,
+    "weighted_recall": 0.9137717121588089,
+    "weighted_f1": 0.9126407512583427
+  },
+  "flatworm_test": {
+    "precision": 0.8181818181818182,
+    "recall": 0.6923076923076923,
+    "f1": 0.75,
+    "support": 13
+  },
+  "campaign_targets": {
+    "Top-1 > 92.68%": false,
+    "Macro Precision > 91.40%": false,
+    "Macro Recall > 87.32%": false,
+    "Macro F1 > 88.92%": false,
+    "Top-2 > 97.58%": false,
+    "Top-3 > 98.82%": true
+  },
+  "comparison_with_f03": {
+    "f04_top1_minus_f03_pp": -0.2481,
+    "f04_top2_minus_f03_pp": -0.4342,
+    "f04_top3_minus_f03_pp": -0.1241,
+    "f04_top5_minus_f03_pp": -0.062,
+    "f04_macro_precision_minus_f03_pp": -1.4609,
+    "f04_macro_recall_minus_f03_pp": -2.6066,
+    "f04_macro_f1_minus_f03_pp": -1.961,
+    "f04_weighted_f1_minus_f03_pp": -0.3015
+  },
+  "scientific_conclusion": "Aug-200 became substantially more effective with ConvNeXt-Small than in the earlier YOLO experiments, but data-level balancing alone remained inferior to F03 Gentle Class-Balanced Focal Loss on the unchanged official AQUA20 test set, especially for macro recall and macro F1.",
+  "next_experiment": "F05_AUG200_GENTLE_CB_FOCAL_COMBINED_INTERVENTION"
+}

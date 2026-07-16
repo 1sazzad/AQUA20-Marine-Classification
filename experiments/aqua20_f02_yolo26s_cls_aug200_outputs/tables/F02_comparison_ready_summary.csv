@@ -1,0 +1,2 @@
+experiment,model,train strategy,val top-1,val top-5,test top-1,test top-5,macro precision,macro recall,macro F1,weighted F1
+F02,YOLO26s-cls,Aug-200 train-only,86.0518,98.7043,83.43672456575682,97.95285359801488,80.91031017571864,65.25645669631736,70.39089519356527,82.83764559475483

@@ -1,0 +1,2 @@
+file=best_model.pth
+sha256=928c8af60aef70537263e2c8cc1cf13782747bc5974f86ff054fbe352065c26f

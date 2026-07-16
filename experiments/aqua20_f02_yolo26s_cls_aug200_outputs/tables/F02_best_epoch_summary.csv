@@ -1,0 +1,2 @@
+experiment,model,epochs_completed,selection_metric,first_best_fitness_epoch,locked_checkpoint_epoch,equal_fitness_tie,first_best_val_top1,first_best_val_top5,best_fitness,checkpoint_val_loss,checkpoint_val_top1,checkpoint_val_top5,fresh_val_top1,fresh_val_top5,fresh_fitness,validation_match,best_pt_sha256
+F02,YOLO26s-cls,68,Ultralytics classification fitness,38,49,True,0.86433,0.98323,0.92378,0.69826,0.86052,0.98704,0.8605182766914368,0.9870426654815674,0.9237804710865021,True,38a4948f97f8ed3194d4c3ce7d56132180f8a1b3b84a4c575fba45d1380ab302

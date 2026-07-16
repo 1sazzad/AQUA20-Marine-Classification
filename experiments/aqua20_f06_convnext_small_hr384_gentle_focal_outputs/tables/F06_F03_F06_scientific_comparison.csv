@@ -1,0 +1,5 @@
+Experiment,Method,Top-1 (%),Macro Recall (%),Macro F1 (%)
+F03,Original train + Gentle CB Focal,91.6253,86.9302,87.9645
+F04,Aug-200 + Cross-Entropy,91.3772,84.3236,86.0035
+F05,Aug-200 + Gentle CB Focal,91.129,82.6547,84.3487
+F06,F03 branch + HR384 fine-tuning,92.12158918380736,87.43620791839449,88.16990887816416

@@ -1,0 +1,23 @@
+{
+  "plan_keyword": "04-07-2026 AQUA20 FINAL BEAT BASE PLAN",
+  "stage": "F00",
+  "status": "COMPLETED",
+  "hf_dataset_id": "taufiktrf/AQUA20",
+  "seed": 42,
+  "official_split": {
+    "train": 5247,
+    "val": 1312,
+    "test": 1612
+  },
+  "aug200_split": {
+    "train": 7284,
+    "val": 1312,
+    "test": 1612
+  },
+  "original_train_images": 5247,
+  "augmented_train_images_added": 2037,
+  "augmentation_scope": "train_only",
+  "validation_modified": false,
+  "test_modified": false,
+  "next_stage": "F01 YOLO26m-cls + Aug-200"
+}

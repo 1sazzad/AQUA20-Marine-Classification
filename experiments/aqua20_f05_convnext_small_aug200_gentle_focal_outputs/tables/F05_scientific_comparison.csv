@@ -1,0 +1,4 @@
+experiment,training_intervention,top1_percentage,macro_recall_percentage,macro_f1_percentage
+F03_CONVNEXT_SMALL_GENTLE_CB_FOCAL,Original train + Gentle CB Focal,91.6253,86.9302,87.9645
+F04_CONVNEXT_SMALL_AUG200,Aug-200 + Cross-Entropy,91.3772,84.3236,86.0035
+F05_CONVNEXT_SMALL_AUG200_GENTLE_CB_FOCAL,Aug-200 + Gentle CB Focal,91.129,82.6547,84.3487

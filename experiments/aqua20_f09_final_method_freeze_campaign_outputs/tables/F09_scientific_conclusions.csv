@@ -1,0 +1,7 @@
+Intervention,Conclusion
+Gentle CB Focal,"F03 outperformed F04 in Top-1, Macro Precision, Macro Recall, Macro F1, and Weighted F1; it was the stronger isolated imbalance intervention."
+Aug-200,Aug-200 alone was weaker than the Gentle CB Focal branch for balanced-class performance.
+Aug-200 + Gentle CB Focal,"Adding Aug-200 to the Gentle CB Focal branch reduced Top-1, Macro Recall, Macro F1, and Weighted F1; the two interventions were not complementary."
+HR384,"HR384 improved F03 in Top-1, Top-2, Top-3, Top-5, Macro Recall, Macro F1, and Weighted F1."
+Horizontal-flip TTA,"TTA left Top-1 unchanged and reduced Macro Precision, Macro Recall, Macro F1, and Weighted F1 on the official test."
+Cross-family ensemble,"F08 improved Top-1, Top-2, Top-3, Top-5, Macro Precision, and Weighted F1 over F06, but reduced Macro Recall and Macro F1."

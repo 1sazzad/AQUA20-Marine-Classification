@@ -1,0 +1,2 @@
+epoch,epoch_minutes,learning_rate,train_loss,train_top1,val_loss,val_top1,val_top2,val_top3,val_macro_precision,val_macro_recall,val_macro_f1,best_val_macro_f1,best_epoch_so_far,is_best_checkpoint,recovery_checkpoint_saved,epochs_without_improvement
+13,7.829977218310038,7.938926261462365e-06,0.0074709372504695,0.9683628740232514,0.0505972144311208,0.9253048780487804,0.976371951219512,0.9946646341463414,0.8799293448581487,0.926188729805178,0.8933009691623253,0.8933009691623253,13,True,False,0

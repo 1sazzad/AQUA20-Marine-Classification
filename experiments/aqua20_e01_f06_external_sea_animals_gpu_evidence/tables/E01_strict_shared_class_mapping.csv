@@ -1,0 +1,24 @@
+external_class,strict_shared_class,mapped_aqua20_class_id,mapped_aqua20_class_name,evaluation_role
+Clams,False,,,UNKNOWN_EXTERNAL
+Corals,True,0.0,00_coral,KNOWN_SHARED
+Crabs,True,1.0,01_crab,KNOWN_SHARED
+Dolphin,True,8.0,08_marine_dolphin,KNOWN_SHARED
+Eel,True,3.0,03_eel,KNOWN_SHARED
+Fish,True,4.0,04_fish,KNOWN_SHARED
+Jelly Fish,True,7.0,07_jellyfish,KNOWN_SHARED
+Lobster,False,,,UNKNOWN_EXTERNAL
+Nudibranchs,True,13.0,13_seaSlug,KNOWN_SHARED
+Octopus,True,9.0,09_octopus,KNOWN_SHARED
+Otter,False,,,UNKNOWN_EXTERNAL
+Penguin,False,,,UNKNOWN_EXTERNAL
+Puffers,False,,,UNKNOWN_EXTERNAL
+Sea Rays,True,10.0,10_rayfish,KNOWN_SHARED
+Sea Urchins,True,14.0,14_seaUrchin,KNOWN_SHARED
+Seahorse,False,,,UNKNOWN_EXTERNAL
+Seal,False,,,UNKNOWN_EXTERNAL
+Sharks,True,15.0,15_shark,KNOWN_SHARED
+Shrimp,True,16.0,16_shrimp,KNOWN_SHARED
+Squid,True,17.0,17_squid,KNOWN_SHARED
+Starfish,True,18.0,18_starfish,KNOWN_SHARED
+Turtle_Tortoise,True,19.0,19_turtle,KNOWN_SHARED
+Whale,False,,,UNKNOWN_EXTERNAL

@@ -1,0 +1,2 @@
+experiment,model,training_strategy,best_epoch,val_top1_pct,val_top5_pct,test_top1_pct,test_top5_pct,macro_precision_pct,macro_recall_pct,macro_f1_pct,weighted_f1_pct,test_support,base_paper_top1_pct,difference_vs_base_pp,beats_base_paper
+F01_YOLO26M_CLS_AUG200,YOLO26m-cls,Aug-200 train-only balancing,2,87.88110017776489,99.39024448394775,84.67741935483872,98.94540942928039,83.30535757778472,73.98953258799918,75.99076868071187,84.4248715615062,1612,92.68,-8.002580645161288,False

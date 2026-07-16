@@ -1,0 +1,2 @@
+experiment,model,train_strategy,checkpoint_epoch,test_loss,test_top1,test_top2,test_top3,test_top5,macro_precision,macro_recall,macro_f1,weighted_precision,weighted_recall,weighted_f1,support
+F03,ConvNeXt-Small,Original + Gentle CB Focal,13,0.10620800348969538,0.9162531017369727,0.9770471464019851,0.9913151364764268,0.9968982630272953,0.9078500650810207,0.8693021631512876,0.879644669523943,0.9187774256403167,0.9162531017369727,0.9156558786069511,1612

@@ -1,0 +1,33 @@
+{
+  "experiment": "F01_YOLO26M_CLS_AUG200",
+  "package_type": "immediate post-training safety package",
+  "created_utc": "2026-07-06T06:00:27.228246+00:00",
+  "training_completed": true,
+  "validation_analysis_completed": false,
+  "official_test_evaluation_completed": false,
+  "checkpoint_selection_source": "Ultralytics validation during training",
+  "preserved_checkpoint": "best.pt",
+  "last_pt_included": false,
+  "dataset_included": false,
+  "best_model_original_path": "/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/experiments/F01_YOLO26M_CLS_AUG200/yolo_runs/train/weights/best.pt",
+  "best_model_size_mb": 19.95741844177246,
+  "best_model_sha256": "aa489def1443a6cdab42a0a20a530b9e341d574dcaaf234bfe6c7983113e8e5a",
+  "results_csv_sha256": "e4ca9bb5cc021c4f793b797c7f496e2515243ea973bea951f8396e32de63bcb3",
+  "args_yaml_sha256": "01f2346ce67ba5ba3b12ea452f782e289607ef983429623c5c93f1aecad01773",
+  "copied_files": [
+    "weights/best.pt",
+    "training_run/results.csv",
+    "training_run/args.yaml",
+    "training_run/results.png",
+    "training_run/train_batch0.jpg",
+    "training_run/train_batch1.jpg",
+    "training_run/train_batch2.jpg",
+    "tables/f01_step2_training_configuration.json",
+    "tables/f01_step1_environment_data_verification.json",
+    "tables/f01_class_to_idx.json",
+    "tables/f01_selected_data_root.txt",
+    "tables/f01_best_model_path.txt",
+    "tables/f01_last_model_path.txt",
+    "tables/f01_yolo_run_dir.txt"
+  ]
+}

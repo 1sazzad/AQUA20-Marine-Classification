@@ -1,0 +1,11 @@
+{
+    "experiment": "F03_CONVNEXT_SMALL_GENTLE_CB_FOCAL",
+    "loss_name": "Gentle Class-Balanced Focal Loss",
+    "beta": 0.999,
+    "gamma": 1.0,
+    "weight_method": "effective_number",
+    "weight_normalization": "mean_1",
+    "inverse_frequency_weighting": false,
+    "training_data": "original_train_5247",
+    "seed": 42
+}

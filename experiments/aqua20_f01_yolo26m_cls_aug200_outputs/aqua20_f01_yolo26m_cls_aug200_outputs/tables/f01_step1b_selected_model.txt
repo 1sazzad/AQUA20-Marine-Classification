@@ -1,0 +1,4 @@
+selected_model_name=yolo26m-cls.pt
+target_model_name=yolo26m-cls.pt
+is_target_model_available=True
+ultralytics_version=8.4.89

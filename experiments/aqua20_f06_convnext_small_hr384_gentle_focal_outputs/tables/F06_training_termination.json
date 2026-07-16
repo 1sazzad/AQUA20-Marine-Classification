@@ -1,0 +1,14 @@
+{
+  "experiment": "F06_CONVNEXT_SMALL_HR384_GENTLE_CB_FOCAL",
+  "termination_type": "manual_validation_plateau_termination",
+  "completed_epochs": 9,
+  "last_completed_epoch": 9,
+  "interrupted_epoch": 10,
+  "interrupted_epoch_excluded": true,
+  "best_epoch": 2,
+  "best_validation_macro_f1": 0.8851219331824716,
+  "completed_epochs_after_best_without_improvement": 7,
+  "selection_metric": "validation Macro F1 only",
+  "official_test_used_for_stopping": false,
+  "reason": "Training manually terminated after a sustained validation Macro F1 plateau. The incomplete interrupted epoch was excluded."
+}

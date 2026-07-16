@@ -1,0 +1,6 @@
+Intervention,Reference,Candidate,Scientific Role,Δ Top-1 (pp),Δ Top-2 (pp),Δ Top-3 (pp),Δ Top-5 (pp),Δ Macro Precision (pp),Δ Macro Recall (pp),Δ Macro F1 (pp),Δ Weighted F1 (pp)
+Gentle CB Focal vs Aug-200,F04,F03,Compare isolated imbalance strategies,0.2481,0.4342,0.1241,0.062,1.4609,2.6066,1.961,0.3015
+Aug-200 + Gentle CB Focal,F03,F05,Test whether Aug-200 complements Gentle CB Focal,-0.4963,-0.2481,-0.1861,0.0621,-1.0354,-4.2755,-3.6158,-0.5897
+HR384 fine-tuning,F03,F06,Test high-resolution continuation of F03,0.4963,0.2482,0.1241,0.0621,-0.3538,0.506,0.2054,0.5154
+Horizontal-flip TTA,F06,F07,Test deterministic two-view TTA,0.0,-0.0621,0.062,-0.0621,-0.5547,-0.9038,-0.7673,-0.0039
+Cross-family probability ensemble,F06,F08,Test validation-governed ConvNeXt + YOLO ensemble,0.1241,0.124,0.1241,0.124,0.2413,-0.4192,-0.2293,0.094

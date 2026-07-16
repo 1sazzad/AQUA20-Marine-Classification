@@ -1,0 +1,1 @@
+/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/balanced_train/aug200_imagefolder

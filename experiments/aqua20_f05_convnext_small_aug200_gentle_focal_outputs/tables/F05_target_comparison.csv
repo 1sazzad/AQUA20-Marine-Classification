@@ -1,0 +1,7 @@
+metric,f05_percentage,target_percentage,delta_percentage_points,target_met
+Top-1,91.129,92.68,-1.551000000000002,False
+Macro Precision,89.7496,91.4,-1.6504000000000048,False
+Macro Recall,82.6547,87.32,-4.665299999999988,False
+Macro F1,84.3487,88.92,-4.571300000000008,False
+Top-2,97.4566,97.58,-0.12340000000000373,False
+Top-3,98.9454,98.82,0.12540000000001328,True

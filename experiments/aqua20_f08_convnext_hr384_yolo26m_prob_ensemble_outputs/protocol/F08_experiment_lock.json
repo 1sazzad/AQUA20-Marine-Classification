@@ -1,0 +1,68 @@
+{
+  "experiment": "F08_CONVNEXT_SMALL_HR384_YOLO26M_PROB_ENSEMBLE",
+  "campaign": "04-07-2026 AQUA20 FINAL BEAT BASE PLAN",
+  "mode": "inference_only",
+  "ensemble_method": "weighted_arithmetic_mean_of_softmax_probabilities",
+  "sources": {
+    "convnext": {
+      "experiment": "F06_CONVNEXT_SMALL_HR384_GENTLE_CB_FOCAL",
+      "sha256": "d0c225c28b25f09822bc99518a37f9b1fe642b2d01213da7f68e2d76a255832a",
+      "filename": "best_model.pth"
+    },
+    "yolo": {
+      "experiment": "F01_YOLO26M_CLS_AUG200",
+      "sha256": "aa489def1443a6cdab42a0a20a530b9e341d574dcaaf234bfe6c7983113e8e5a",
+      "filename": "best.pt"
+    }
+  },
+  "weight_grid": [
+    {
+      "convnext": 0.5,
+      "yolo": 0.5
+    },
+    {
+      "convnext": 0.6,
+      "yolo": 0.4
+    },
+    {
+      "convnext": 0.7,
+      "yolo": 0.3
+    },
+    {
+      "convnext": 0.8,
+      "yolo": 0.2
+    }
+  ],
+  "selection_metric": "validation_macro_f1",
+  "tie_break": [
+    "validation_macro_f1",
+    "validation_macro_recall",
+    "validation_top1",
+    "prefer_equal_weighting"
+  ],
+  "class_order_verification": "required_before_validation",
+  "official_test_weight_selection": "forbidden",
+  "final_weight_status": "selected_by_validation",
+  "selected_weight": {
+    "convnext": 0.7,
+    "yolo": 0.3
+  },
+  "selected_validation_metrics": {
+    "top1": 0.9344512195121951,
+    "macro_precision": 0.8981201732563717,
+    "macro_recall": 0.9306744718800358,
+    "macro_f1": 0.9073587820447285,
+    "weighted_f1": 0.9349681763303972
+  },
+  "official_test_evaluated": true,
+  "official_test_metrics": {
+    "top1": 0.9224565756823822,
+    "top2": 0.9807692307692307,
+    "top3": 0.9937965260545906,
+    "top5": 0.9987593052109182,
+    "macro_precision": 0.9067249389323981,
+    "macro_recall": 0.8701698152274823,
+    "macro_f1": 0.8794056579590764,
+    "weighted_f1": 0.9217503607215581
+  }
+}

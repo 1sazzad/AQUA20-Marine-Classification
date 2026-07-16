@@ -1,0 +1,42 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and models
+data/
+datasets/
+checkpoints/
+models/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.onnx
+
+# Experiment outputs
+runs/
+outputs/
+logs/
+wandb/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore

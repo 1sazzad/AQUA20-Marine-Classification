@@ -1,0 +1,6 @@
+Reporting Role,Experiment,Frozen Result
+Primary proposed method,F06,ConvNeXt-Small + Gentle CB Focal + HR384
+Complementary final ensemble,F08,0.70 F06 + 0.30 F01 probability ensemble
+Strongest balanced-class model,F06,Highest official-test Macro Recall and Macro F1
+Strongest ranking model,F08,Best campaign Top-1 and Top-k ranking metrics
+Best isolated imbalance intervention,F03,Gentle Class-Balanced Focal Loss

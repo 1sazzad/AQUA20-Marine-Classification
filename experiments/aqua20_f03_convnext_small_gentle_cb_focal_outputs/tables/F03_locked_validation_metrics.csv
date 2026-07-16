@@ -1,0 +1,2 @@
+experiment,checkpoint_epoch,val_top1,val_top2,val_top3,val_macro_precision,val_macro_recall,val_macro_f1,support,checkpoint_match
+F03_CONVNEXT_SMALL_GENTLE_CB_FOCAL,13,0.9253048780487805,0.9763719512195121,0.9946646341463414,0.8799293448581487,0.9261887298051781,0.8933009691623253,1312,PASSED

@@ -1,0 +1,16 @@
+{
+  "step": "F01 Step 1B \u2014 Install Ultralytics and verify YOLO26m-cls availability",
+  "status": "PASSED",
+  "ultralytics_version": "8.4.89",
+  "installed_now": false,
+  "selected_model_name": "yolo26m-cls.pt",
+  "target_model_name": "yolo26m-cls.pt",
+  "is_target_model_available": true,
+  "model_checks": [
+    {
+      "model_name": "yolo26m-cls.pt",
+      "loadable": true,
+      "error": ""
+    }
+  ]
+}

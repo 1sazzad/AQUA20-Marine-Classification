@@ -1,0 +1,4 @@
+split,path,split_exists,image_count,expected_image_count,image_count_passed,class_count,expected_class_count,class_count_passed
+train,/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/balanced_train/aug200_imagefolder/train,True,7284,7284,True,20,20,True
+val,/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/balanced_train/aug200_imagefolder/val,True,1312,1312,True,20,20,True
+test,/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/balanced_train/aug200_imagefolder/test,True,1612,1612,True,20,20,True

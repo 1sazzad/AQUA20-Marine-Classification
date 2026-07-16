@@ -1,0 +1,2 @@
+selection_split,selection_metric,convnext_weight,yolo_weight,validation_top1,validation_macro_recall,validation_macro_f1,official_test_used_for_selection
+validation,Macro F1,0.7,0.3,0.9344512195121951,0.9306744718800358,0.9073587820447285,False

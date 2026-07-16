@@ -1,0 +1,2 @@
+experiment,best_epoch,checkpoint_rule,val_accuracy,val_macro_precision,val_macro_recall,val_macro_f1,beta,gamma,image_size,batch_size,learning_rate,weight_decay,seed,checkpoint_sha256
+F05_CONVNEXT_SMALL_AUG200_GENTLE_CB_FOCAL,20,validation_macro_f1,0.9329268292682927,0.9006350051397465,0.9101462756981441,0.8993258075072857,0.999,1.0,224,16,1e-05,0.0001,42,548e7c7d925f0272d06a5e57b682364b2affe302ff5c7c5071461ebde0b2e3f3

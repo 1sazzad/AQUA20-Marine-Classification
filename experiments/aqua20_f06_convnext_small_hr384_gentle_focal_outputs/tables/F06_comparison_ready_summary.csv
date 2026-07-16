@@ -1,0 +1,2 @@
+Experiment,Method,Top-1 (%),Top-2 (%),Top-3 (%),Top-5 (%),Macro Precision (%),Macro Recall (%),Macro F1 (%),Weighted F1 (%)
+F06,ConvNeXt-Small + HR384 fine-tuning + Gentle CB Focal,92.12158918380737,97.9528546333313,99.25558567047119,99.75185990333557,90.43123268147741,87.43620791839449,88.16990887816416,92.0809903317386

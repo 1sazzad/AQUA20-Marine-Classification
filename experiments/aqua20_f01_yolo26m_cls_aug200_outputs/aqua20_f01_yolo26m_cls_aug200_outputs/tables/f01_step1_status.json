@@ -1,0 +1,18 @@
+{
+  "step": "F01 Step 1 \u2014 Environment and Aug-200 path verification",
+  "status": "PASSED",
+  "seed": 42,
+  "project_root": "/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026",
+  "exp_name": "F01_YOLO26M_CLS_AUG200",
+  "exp_dir": "/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/experiments/F01_YOLO26M_CLS_AUG200",
+  "data_root": "/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/balanced_train/aug200_imagefolder",
+  "ultralytics_available": true,
+  "class_order_stable": true,
+  "expected_counts": {
+    "train": 7284,
+    "val": 1312,
+    "test": 1612
+  },
+  "split_verify_csv": "/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/experiments/F01_YOLO26M_CLS_AUG200/tables/f01_step1_aug200_split_verify.csv",
+  "class_mapping_csv": "/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/experiments/F01_YOLO26M_CLS_AUG200/tables/f01_step1_class_id_folder_mapping.csv"
+}

@@ -1,0 +1,4 @@
+Experiment,Validation Top-1 (%),Test Top-1 (%),Top-1 Test-Val Gap (pp),Validation Macro Recall (%),Test Macro Recall (%),Macro Recall Test-Val Gap (pp),Validation Macro F1 (%),Test Macro F1 (%),Macro F1 Test-Val Gap (pp)
+F06,92.9878,92.1216,-0.8662,90.679,87.4362,-3.2428,88.5122,88.1699,-0.3423
+F07,92.6829,92.1216,-0.5613,91.2771,86.5324,-4.7447,88.9836,87.4026,-1.581
+F08,93.4451,92.2457,-1.1994,93.0674,87.017,-6.0504,90.7359,87.9406,-2.7953

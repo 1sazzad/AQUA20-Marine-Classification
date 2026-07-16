@@ -1,0 +1,13 @@
+{
+  "experiment": "F01_YOLO26M_CLS_AUG200",
+  "model": "YOLO26m-cls",
+  "checkpoint": "/kaggle/working/AQUA20_FINAL_BEAT_BASE_04072026/experiments/F01_YOLO26M_CLS_AUG200/yolo_runs/train/weights/best.pt",
+  "checkpoint_sha256": "aa489def1443a6cdab42a0a20a530b9e341d574dcaaf234bfe6c7983113e8e5a",
+  "best_epoch": 2,
+  "split": "official_test",
+  "test_images": 1612,
+  "native_test_top1": 0.8467742204666138,
+  "native_test_top1_percent": 84.67742204666138,
+  "native_test_top5": 0.9894540905952454,
+  "native_test_top5_percent": 98.94540905952454
+}

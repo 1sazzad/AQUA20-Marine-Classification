@@ -1,0 +1,3 @@
+Experiment,Checkpoint,Best Epoch,SHA-256,Hash Status
+F06,best_model.pth,2,d0c225c28b25f09822bc99518a37f9b1fe642b2d01213da7f68e2d76a255832a,VERIFIED
+F01,best.pt,2,aa489def1443a6cdab42a0a20a530b9e341d574dcaaf234bfe6c7983113e8e5a,VERIFIED
