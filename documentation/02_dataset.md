@@ -1089,3 +1089,4 @@ exhaustive internal corrupt-image decode report and handling policy;
 per-image realised Aug-200 random-parameter log, if one ever existed.
 
 These unresolved items do not change the frozen counts or split logic, but they limit claims of complete dataset-level reproducibility.
+-
