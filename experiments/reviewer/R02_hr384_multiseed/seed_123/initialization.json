@@ -1,0 +1,12 @@
+{
+  "verified_utc": "2026-08-13T07:21:48.008778+00:00",
+  "source_checkpoint": "/home/m-sazzad-h/aqua20_reviewer_outputs/R01/focal/seed_123/weights/best_model.pth",
+  "sha256": "e2c9a532dca693ec69ae97b6234b4e8952ab21103642dadc59c5ffcfef8df118",
+  "seed": 123,
+  "source_best_epoch": 24,
+  "strict_state_dict_load": true,
+  "classifier_shape": [
+    20,
+    768
+  ]
+}

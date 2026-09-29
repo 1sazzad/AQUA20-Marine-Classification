@@ -65,16 +65,56 @@ pip install --index-url https://download.pytorch.org/whl/cu118 -r requirements/g
 pip install -r requirements/base.txt
 ```
 
-Launch R01 sequentially inside `tmux` so SSH disconnects do not kill the run:
+## Execution gate
+
+Reviewer training experiments are performed and verified **one at a time**.
+Every training start or resume requires a separate explicit instruction. The
+automatic sequential launcher is disabled and must not be used to continue to
+later seeds.
+
+The current and only authorized experiment is:
+
+- R01 standard cross-entropy, seed 42.
+
+Do not start CE seeds 123 or 2026, focal seeds 123 or 2026, R02 HR384,
+calibration, or duplicate auditing. Keep their infrastructure in place for
+later use. The original F01-F09 campaign remains completely frozen.
+
+Before launching CE seed 42 on Azure, complete these checks in order:
+
+1. Finish repository and Python environment setup.
+2. Verify CUDA and the Tesla T4 with `python scripts/check_gpu.py`.
+3. Locate or transfer the fixed AQUA20 dataset.
+4. Run `python scripts/check_reviewer_environment.py` and confirm train =
+   5,247, validation = 1,312, test = 1,612, and classes = 20.
+5. Run the CE seed-42 sanity check:
+
+   ```bash
+   python scripts/reviewer/train_r01.py --loss ce --seed 42 --sanity-check
+   ```
+
+6. Start only CE seed 42 inside `tmux`:
 
 ```bash
 tmux new -s aqua20-r01
-bash scripts/reviewer/run_r01_sequential.sh
+mkdir -p "$AQUA20_OUTPUT_ROOT/R01/ce/seed_42"
+python scripts/reviewer/train_r01.py --loss ce --seed 42 2>&1 | tee "$AQUA20_OUTPUT_ROOT/R01/ce/seed_42/training.log"
 ```
 
-The `seed_42` focal run reuses the frozen F03 checkpoint rather than retraining.
+If a verified CE seed-42 run is interrupted, resume that run only after an
+explicit instruction:
 
-If a run is interrupted, rerun the launcher and it will resume any seed that already has a last checkpoint.
+```bash
+python scripts/reviewer/train_r01.py --loss ce --seed 42 --resume 2>&1 | tee -a "$AQUA20_OUTPUT_ROOT/R01/ce/seed_42/training.log"
+```
+
+Confirm that epoch metrics are printed, `tables/training_history.csv` updates,
+and both `weights/best_model.pth` and `weights/last_checkpoint.pth` are saved in
+the CE seed-42 run directory. Verify the resume path and log locations, then
+stop. Do not begin another seed when CE seed 42 finishes.
+
+The `seed_42` focal run remains a frozen reuse of the original F03 checkpoint
+rather than a retraining run, but it is not part of the current execution.
 
 ## Execution portability
 

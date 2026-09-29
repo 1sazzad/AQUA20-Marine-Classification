@@ -2,24 +2,15 @@
 
 set -euo pipefail
 
-repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-cd "$repo_root"
+cat >&2 <<'EOF'
+Automatic sequential R01 execution is disabled.
 
-run_one() {
-	local loss="$1"
-	local seed="$2"
-	local run_root="${AQUA20_OUTPUT_ROOT:?}/R01/${loss}/seed_${seed}"
-	local checkpoint="${run_root}/weights/last_checkpoint.pth"
+Reviewer experiments must be launched one at a time after explicit approval.
+The only currently authorized run is R01 cross-entropy seed 42; launch it
+directly with scripts/reviewer/train_r01.py after completing the documented
+environment, dataset, GPU, and sanity checks.
 
-	if [[ -f "$checkpoint" ]]; then
-		python scripts/reviewer/train_r01.py --loss "$loss" --seed "$seed" --resume
-	else
-		python scripts/reviewer/train_r01.py --loss "$loss" --seed "$seed"
-	fi
-}
+This guard intentionally does not start or resume any training run.
+EOF
 
-run_one ce 42
-run_one ce 123
-run_one ce 2026
-run_one focal 123
-run_one focal 2026
+exit 2

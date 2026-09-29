@@ -1,0 +1,144 @@
+{
+  "experiment": "R02",
+  "experiment_role": "reviewer_hr384_multiseed",
+  "seed": 123,
+  "loss": "focal",
+  "dataset_root": "/home/m-sazzad-h/datasets/AQUA20_OFFICIAL",
+  "output_root": "/home/m-sazzad-h/aqua20_reviewer_outputs",
+  "run_root": "/home/m-sazzad-h/aqua20_reviewer_outputs/R02/seed_123",
+  "source_checkpoint": "/home/m-sazzad-h/aqua20_reviewer_outputs/R01/focal/seed_123/weights/best_model.pth",
+  "source_checkpoint_sha256": "e2c9a532dca693ec69ae97b6234b4e8952ab21103642dadc59c5ffcfef8df118",
+  "source_seed": 123,
+  "source_best_epoch": 24,
+  "source_role": "R01 Gentle CB Focal seed123 224x224 best checkpoint",
+  "image_size": 384,
+  "pre_resize": 440,
+  "batch_size": 8,
+  "workers": 0,
+  "completed_hr_epoch_budget": 9,
+  "scheduler_t_max": 15,
+  "lr": 5e-06,
+  "weight_decay": 0.0001,
+  "eps": 1e-08,
+  "eta_min": 0.0,
+  "beta": 0.999,
+  "gamma": 1.0,
+  "max_grad_norm": 1.0,
+  "checkpoint_selection": "strict_highest_validation_macro_f1",
+  "official_test_policy": "test evaluated only after best validation checkpoint locked",
+  "amp_enabled": true,
+  "cudnn_deterministic": true,
+  "cudnn_benchmark": false,
+  "resume_requested": false,
+  "sanity_check_requested": false,
+  "train_transform": {
+    "resize": [
+      440,
+      440
+    ],
+    "random_resized_crop": {
+      "size": 384,
+      "scale": [
+        0.8,
+        1.0
+      ],
+      "ratio": [
+        0.75,
+        1.3333333333333333
+      ]
+    },
+    "horizontal_flip_p": 0.5,
+    "rotation_degrees": 10,
+    "color_jitter": {
+      "brightness": [
+        0.88,
+        1.12
+      ],
+      "contrast": [
+        0.88,
+        1.12
+      ],
+      "saturation": [
+        0.88,
+        1.12
+      ],
+      "hue": [
+        -0.03,
+        0.03
+      ]
+    },
+    "normalization": "ImageNet"
+  },
+  "eval_transform": {
+    "resize": [
+      384,
+      384
+    ],
+    "normalization": "ImageNet"
+  },
+  "class_names": [
+    "coral",
+    "crab",
+    "diver",
+    "eel",
+    "fish",
+    "fishInGroups",
+    "flatworm",
+    "jellyfish",
+    "marine_dolphin",
+    "octopus",
+    "rayfish",
+    "seaAnemone",
+    "seaCucumber",
+    "seaSlug",
+    "seaUrchin",
+    "shark",
+    "shrimp",
+    "squid",
+    "starfish",
+    "turtle"
+  ],
+  "class_counts": {
+    "coral": 1249,
+    "crab": 34,
+    "diver": 41,
+    "eel": 128,
+    "fish": 1760,
+    "fishInGroups": 218,
+    "flatworm": 40,
+    "jellyfish": 78,
+    "marine_dolphin": 16,
+    "octopus": 16,
+    "rayfish": 305,
+    "seaAnemone": 712,
+    "seaCucumber": 28,
+    "seaSlug": 63,
+    "seaUrchin": 92,
+    "shark": 57,
+    "shrimp": 18,
+    "squid": 19,
+    "starfish": 133,
+    "turtle": 240
+  },
+  "dataset_counts": {
+    "train": 5247,
+    "val": 1312,
+    "test": 1612,
+    "classes": 20
+  },
+  "hardware_software": {
+    "cuda_available": true,
+    "torch_version": "2.12.1+cu130",
+    "cuda_build": "13.0",
+    "gpu_name": "Tesla T4",
+    "gpu_total_memory_bytes": 16713646080,
+    "nvidia_smi": "Tesla T4, 610.43.02, 16384 MiB"
+  },
+  "run_started_utc": "2026-08-13T07:21:48.009019+00:00",
+  "run_finished_utc": "2026-08-13T08:01:54.791616+00:00",
+  "runtime_seconds_this_process": 2406.782608681,
+  "best_epoch": 7,
+  "best_validation_macro_f1": 0.9086880961286969,
+  "test_macro_f1": 0.8730274098417826,
+  "test_top1": 0.9187344913151365
+}

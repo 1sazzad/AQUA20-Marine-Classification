@@ -1,0 +1,2 @@
+split,epoch,best_epoch,best_val_macro_f1,loss,top1,top2,top3,top5,macro_precision,macro_recall,macro_f1,weighted_f1,checkpoint_path,loss_name,seed
+test,29,29,0.9008769325547975,0.13469104435900012,0.9156327543424317,0.9789081885856079,0.9900744416873449,0.9968982630272953,0.8943189537229875,0.8478923747321232,0.8631253694533992,0.9148274257535159,/home/m-sazzad-h/aqua20_reviewer_outputs/R01/focal/seed_2026/weights/best_model.pth,focal,2026
